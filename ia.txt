@@ -14,3 +14,9 @@ repuesta:util cumple con lo pedido se utilizo correctamte los props para asegura
 aplica un filtro de mascotas utilizando props .map(), por especie,estado,años, por estiquetas, asigna props key usando el id de cada elemento,aplica un busqueda por nombre , tienes que noramalizar textoy aplicar buenas practicas y si no cunetra coloca un mensaje "No hay mascotas que coincidan"
 
 repuesta:el filtro funciono de manenara correcta filtara por estiqueta, estado y especie sirve de manera correcta y los datos esta bien y son corente 
+
+
+== Etapa 5==
+quiero que cambies la forma en la que se ve las mascostas urgentes(color, los bordes de forma en la que se haga notar) se el contador de de posicion y como se ve
+
+repuesta:

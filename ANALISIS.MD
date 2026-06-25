@@ -10,3 +10,20 @@ jsx
 
     ¿por que es el adecuado?
         es el adecuado ya que nos deja tanto ocupar js y seudo html lo que hae que sea mas rapido y compatible 
+
+estado(useState)
+    ¿Donde lo usas en este problema?
+        se ocupo en archivo app.jsx 
+
+    ¿por que es el adecuado?    
+
+Renderizado de lsita(.map + key)
+    ¿Donde lo usas en este problema?
+        en app.tsx se ocupa 
+    ¿por que es el adecuado? 
+        nos permite recorrer la lsita y genera una que es la que se muestra en la pagina y tambien se aplica el uso de key 
+
+¿Que venteja tiene dividir el directorio en componeste en lugar de escribir todo en un solo archivo?
+    nos permite mejor organizacion y modularidad de proyecto es mejor que nos permite escalabilidad de una manera eficiente y clara 
+
+¿?

@@ -1,0 +1,6 @@
+==Etapa 1==
+crea una aplicacion web, simple, ordenda que permita ver mascotas, destinigir su especie, resaltar los casos de adpocion urgente, mascotacard y los datos esta en mascostas.jsx
+
+como buenas practicas define lso tipos propTypes, agrega un estilo diferente para perros y gatos, ajusta bien div donde esta el nombre de la especie paraque todos tenga el mismo tamaño
+
+repuesta: sirvio correctamente si tiene que ajustar los tamaños de algunos "div donde esta las especie", se hizo otro promps para vereficar las buenas practicas y agregar un estilos diferente a cada especie.

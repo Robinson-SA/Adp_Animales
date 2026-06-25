@@ -6,11 +6,65 @@ import ListaMascotas from './componentes/listaMascotas'
 
 function App() {
   const [especieSeleccionada, setEspecieSeleccionada] = useState('Todas')
+  const [estadoSeleccionado, setEstadoSeleccionado] = useState('Todas')
+  const [edadSeleccionada, setEdadSeleccionada] = useState('Todas')
+  const [etiquetaSeleccionada, setEtiquetaSeleccionada] = useState('Todas')
 
   const opcionesEspecies = useMemo(
     () => ['Todas', ...Array.from(new Set(mascotas.map((mascota) => mascota.especie)))],
     []
   )
+
+  const opcionesEstados = useMemo(
+    () => ['Todas', 'Urgente', 'Normal'],
+    []
+  )
+
+  const opcionesEdad = useMemo(
+    () => ['Todas', '0-2', '3-5', '6+'],
+    []
+  )
+
+  const opcionesEtiquetas = useMemo(
+    () => [
+      'Todas',
+      ...Array.from(
+        new Set(mascotas.flatMap((mascota) => mascota.caracteristicas))
+      ).sort(),
+    ],
+    []
+  )
+
+  const filtros = [
+    {
+      name: 'especie',
+      label: 'Especie',
+      value: especieSeleccionada,
+      options: opcionesEspecies,
+      onChange: setEspecieSeleccionada,
+    },
+    {
+      name: 'estado',
+      label: 'Estado',
+      value: estadoSeleccionado,
+      options: opcionesEstados,
+      onChange: setEstadoSeleccionado,
+    },
+    {
+      name: 'edad',
+      label: 'Años',
+      value: edadSeleccionada,
+      options: opcionesEdad,
+      onChange: setEdadSeleccionada,
+    },
+    {
+      name: 'etiqueta',
+      label: 'Etiqueta',
+      value: etiquetaSeleccionada,
+      options: opcionesEtiquetas,
+      onChange: setEtiquetaSeleccionada,
+    },
+  ]
 
   return (
     <main className="app-shell">
@@ -35,15 +89,17 @@ function App() {
       </header>
 
       <section className="filters">
-        <FiltroEspecie
-          opciones={opcionesEspecies}
-          especieSeleccionada={especieSeleccionada}
-          setEspecieSeleccionada={setEspecieSeleccionada}
-        />
+        <FiltroEspecie filtros={filtros} />
       </section>
 
       <section className="pet-list">
-        <ListaMascotas mascotas={mascotas} especieSeleccionada={especieSeleccionada} />
+        <ListaMascotas
+          mascotas={mascotas}
+          especieSeleccionada={especieSeleccionada}
+          estadoSeleccionado={estadoSeleccionado}
+          edadSeleccionada={edadSeleccionada}
+          etiquetaSeleccionada={etiquetaSeleccionada}
+        />
       </section>
     </main>
   )

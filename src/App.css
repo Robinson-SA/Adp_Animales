@@ -163,22 +163,20 @@ select {
 }
 
 .mascota-card {
-  position: relative;
   display: grid;
   gap: 16px;
-  padding: 28px 22px 22px;
-  border-radius: 28px;
+  padding: 24px 20px;
+  border-radius: 24px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
-  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
 }
 
 .mascota-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 28px;
+  border-radius: 24px;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -186,7 +184,7 @@ select {
 
 .mascota-card.urgente {
   border-color: #dc2626;
-  background: linear-gradient(180deg, #fff1f2 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #fff5f5 0%, #ffffff 100%);
 }
 
 .mascota-card.urgente::before {
@@ -195,60 +193,42 @@ select {
     radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.14), transparent 30%);
 }
 
-.card-position {
-  position: absolute;
-  top: 16px;
-  left: 16px;
+.adopcion-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #0f172a;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.95rem;
-  z-index: 1;
-}
-
-.mascota-card-header {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(249, 115, 22, 0.14);
-  color: #c2410c;
+  background: rgba(220, 38, 38, 0.12);
+  color: #b91c1c;
   font-weight: 700;
-  font-size: 0.85rem;
-  width: fit-content;
+  font-size: 0.8rem;
 }
 
 .mascota-card-header {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
-  align-items: start;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .mascota-card-header h2 {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: #0f172a;
 }
 
 .subtext {
   margin: 6px 0 0;
   color: #475569;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 .species-tag-wrapper {
   display: inline-flex;
   justify-content: center;
-  width: 130px;
-  min-height: 40px;
+  width: 110px;
+  min-height: 32px;
 }
 
 .species-tag {
@@ -256,12 +236,12 @@ select {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 8px 0;
+  padding: 6px 0;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .species-perro {

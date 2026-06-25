@@ -19,4 +19,4 @@ repuesta:el filtro funciono de manenara correcta filtara por estiqueta, estado y
 == Etapa 5==
 quiero que cambies la forma en la que se ve las mascostas urgentes(color, los bordes de forma en la que se haga notar) se el contador de de posicion y como se ve
 
-repuesta:
+repuesta: si cambio el como se ve los urgentes pero agrego unos numeros los cual quitare

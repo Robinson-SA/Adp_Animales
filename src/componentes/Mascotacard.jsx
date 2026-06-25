@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Mascotacard({ mascota, position }) {
+function Mascotacard({ mascota }) {
   const especieClase = mascota.especie.toLowerCase() === 'perro'
     ? 'species-perro'
     : mascota.especie.toLowerCase() === 'gato'
@@ -10,9 +10,6 @@ function Mascotacard({ mascota, position }) {
 
   return (
     <article className={`mascota-card ${mascota.adopcionUrgente ? 'urgente' : ''}`}>
-      <div className="card-position">
-        <span>{position}</span>
-      </div>
       <div className="mascota-card-header">
         <div>
           <h2>{mascota.nombre}</h2>
@@ -47,7 +44,6 @@ Mascotacard.propTypes = {
     caracteristicas: PropTypes.arrayOf(PropTypes.string).isRequired,
     adopcionUrgente: PropTypes.bool.isRequired,
   }).isRequired,
-  position: PropTypes.number.isRequired,
 }
 
 export default Mascotacard

@@ -141,12 +141,8 @@ function App() {
           </div>
         ) : (
           <div className="lista-mascotas">
-            {mascotasFiltradas.map((mascota, index) => (
-              <Mascotacard
-                key={mascota.id}
-                mascota={mascota}
-                position={index + 1}
-              />
+            {mascotasFiltradas.map((mascota) => (
+              <Mascotacard key={mascota.id} mascota={mascota} />
             ))}
           </div>
         )}

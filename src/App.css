@@ -92,6 +92,29 @@ select {
 .filters {
   margin: 28px 0 18px;
   padding: 0 2px;
+  display: grid;
+  gap: 16px;
+}
+
+.busqueda-nombre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(100%, 320px);
+}
+
+.busqueda-nombre label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.busqueda-nombre input {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
 }
 
 .filtro-especie-grid {
